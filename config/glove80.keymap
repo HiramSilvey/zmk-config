@@ -26,6 +26,36 @@
             tapping-term-ms = <200>;
             bindings = <&mo LOWER>, <&to LOWER>;
         };
+        hs_excl: hs_exclamation_at {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp EXCL>, <&kp AT>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        hs_ques: hs_question_dollar {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp QMARK>, <&kp DLLR>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        hs_fslsh: hs_fslash_hash {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp FSLH>, <&kp HASH>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        hs_perc: hs_percent_caret {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp PRCNT>, <&kp CARET>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        hs_astr: hs_asterisk_ampersand {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp STAR>, <&kp AMPS>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     macros {
